@@ -16,8 +16,8 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
           </image>
-          <author>MGHANDOUR</author>
-        @foreach($sounds as $post)
+          <author>author@w3schools.com</author>
+          @foreach($sounds as $post)
             <item>
                 <title>{{ $post->title }}</title>
                 <link>{{ asset('public/audio/'.$post->sound) }}</link>
