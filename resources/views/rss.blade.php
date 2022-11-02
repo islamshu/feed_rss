@@ -11,7 +11,12 @@
         <description>arabicreators</description>
         <language>en</language>
         <pubDate>{{ now()->toRssString() }}</pubDate>
-  
+        <image>
+            <url>https://i1.sndcdn.com/avatars-Pghd90aexdU8iziD-D0ullg-original.jpg</url>
+            <title>بزنس على الطريق | مع الغندور</title>
+            <link>https://mghandour.com/</link>
+          </image>
+          <itunes:author>MGHANDOUR</itunes:author>
         @foreach($sounds as $post)
             <item>
                 <title>{{ $post->title }}</title>
@@ -20,11 +25,8 @@
                 <description>{!! 'تجربة' !!}</description>
                 <author>{{ $user->first_name }}.{{ $user->email }}</author>
                 <guid isPermaLink="false">{{ $post->id }}</guid>
-                <image>
-                    <url>https://i1.sndcdn.com/avatars-Pghd90aexdU8iziD-D0ullg-original.jpg</url>
-                    <title>بزنس على الطريق | مع الغندور</title>
-                    <link>https://mghandour.com/</link>
-                  </image>
+            
+
                 <pubDate>{{ $post->created_at->toRssString() }}</pubDate>
             </item>
         @endforeach
