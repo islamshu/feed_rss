@@ -5,7 +5,7 @@
 <rss version="2.0">
     <channel>
         <title>{{ $user->name }} Arabic Creator</title>
-        <atom:link href="{{ $currentURL }}" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://feed.podbean.com/ErikaBodor/feed.xml" rel="self" type="application/rss+xml"/>
         <link>https://arabicreators.com</link>
         <description>arabicreators </description>
         <pubDate>{{ now()->toRssString()  }}</pubDate>
