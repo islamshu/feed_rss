@@ -10,11 +10,11 @@
         <pubDate>{{ now()->toRssString()  }}</pubDate>
         <generator>https://arabicreators.com</generator>
         <language>en</language>
-        <itunes:author>{{ $user->name }}</itunes:author>
-        <itunes:owner>
+        <author>{{ $user->name }}</author>
+        <owner>
         <itunes:name>{{ $user->name }}</itunes:name>
         <itunes:email>{{ $user->email }}/itunes:email>
-        </itunes:owner>
+        </owner>
         <itunes:image href="https://pbcdn1.podbean.com/imglogo/image-logo/4333547/podcast_image_01877625-5597-4BEA-A55A-9E2A7C9B4100.jpg"/>
         <image>
         <url>https://pbcdn1.podbean.com/imglogo/image-logo/4333547/podcast_image_01877625-5597-4BEA-A55A-9E2A7C9B4100.jpg</url>
