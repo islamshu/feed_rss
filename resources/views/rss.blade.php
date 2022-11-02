@@ -15,12 +15,14 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
         </image>
+        <author><![CDATA[{{ $user->name }}]]></author>
+
         <itunes:owner>
         <itunes:email> {{ $user->email }} </itunes:email>
         </itunes:owner>
         @foreach ($sounds as $post)
             <item>
-                <author>{{ $user->name }}</author>
+                <author><![CDATA[{{ $user->name }}]]></author>
                 <title>{{ $post->title }}</title>
                 <link>{{ asset('public/audio/' . $post->sound) }}</link>
                 <enclosure type="audio/mpeg" url="{{ asset('public/audio/' . $post->sound) }}" length="2444" />
