@@ -15,6 +15,9 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
         </image>
+        <itunes:owner>
+        <itunes:email> {{ $user->email }} </itunes:email>
+        </itunes:owner>
         @foreach ($sounds as $post)
             <item>
                 <author>{{ $user->name }}</author>
