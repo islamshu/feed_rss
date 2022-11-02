@@ -4,7 +4,7 @@
 <?= '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL ?>
 <rss version="2.0">
     <channel>
-        <author>{{ $user->name }}</author>
+        <author>{{ $user->name }}.{{ $user->email }}</author>
         <title>{{ $user->first_name }} {{ $user->last_name }}</title>
         <link>https://www.arabicreators.com</link>
         <description>arabicreators</description>
@@ -15,6 +15,7 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
         </image>
+        <author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>
         @foreach ($sounds as $post)
             <item>
                 <author>{{ $user->name }}</author>
