@@ -16,7 +16,7 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
           </image>
-          <itunes:author>MGHANDOUR</itunes:author>
+          <author>MGHANDOUR</author>
         @foreach($sounds as $post)
             <item>
                 <title>{{ $post->title }}</title>
