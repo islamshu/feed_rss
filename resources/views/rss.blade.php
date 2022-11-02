@@ -15,7 +15,7 @@
                 <link>{{ asset('public/audio/'.$post->sound) }}</link>
                 <enclosure type="audio/mpeg" url="{{ asset('public/audio/'.$post->sound) }}" length="2444"/>
                 <description>{!! 'تجربة' !!}</description>
-                <author><![CDATA[Hardk Savani]]></author>
+                <author>MGHANDOUR</author>
                 <guid isPermaLink="false">{{ $post->id }}</guid>
 
 
