@@ -7,7 +7,7 @@
         <link>https://www.arabicreators.com</link>
         <description>arabicreators</description>
         <language>en</language>
-        <pubDate>{{ now() }}</pubDate>
+        <pubDate>{{ now()->toRssString() }}</pubDate>
   
         @foreach($sounds as $post)
             <item>
