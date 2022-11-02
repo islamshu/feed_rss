@@ -6,7 +6,6 @@
 ?>
 <rss version="2.0">
     <channel>
-        <atom:link href="{{ $currentURL }}" rel="self" type="application/rss+xml" ></atom:link>
         <title>{{ $user->first_name }} {{ $user->last_name }}</title>
         <link>https://www.arabicreators.com</link>
         <description>arabicreators</description>
