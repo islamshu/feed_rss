@@ -16,7 +16,9 @@
                 <enclosure type="audio/mpeg" url="{{ asset('public/audio/'.$post->sound) }}" length="2444"/>
                 <description>{!! 'تجربة' !!}</description>
                 <author><![CDATA[Hardk Savani]]></author>
-                <guid>{{ $post->id }}</guid>
+                <guid isPermaLink="false">{{ $post->id }}</guid>
+
+
                 <pubDate>{{ $post->created_at->toRssString() }}</pubDate>
             </item>
         @endforeach
