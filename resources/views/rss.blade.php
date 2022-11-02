@@ -1,6 +1,5 @@
 @php
     $currentURL = url()->full();
-
 @endphp
 <?=
 '<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL
@@ -9,6 +8,7 @@
     <channel>
         <title>{{ $user->first_name }} {{ $user->last_name }}</title>
         <atom:link href="{{ $currentURL }}" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{ $currentURL }}" rel="next" type="application/rss+xml"/>
         <link>https://www.arabicreators.com</link>
         <description>arabicreators</description>
         <language>en</language>
