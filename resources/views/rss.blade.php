@@ -15,7 +15,7 @@
                 <link>{{ asset('public/audio/'.$post->sound) }}</link>
                 <enclosure type="audio/mpeg" url="{{ asset('public/audio/'.$post->sound) }}" length=""/>
                 <description>{!! 'تجربة' !!}</description>
-                <author>{{ $user->email }}</author>
+                <author>[{{ $user->name }}]</author>
                 <guid>{{ $post->id }}</guid>
                 <pubDate>{{ $post->created_at->toRssString() }}</pubDate>
             </item>
