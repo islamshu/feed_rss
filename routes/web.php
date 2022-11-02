@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/',function(){
     return view('welcome');
+    
 });
 Route::get('rss_feed/{id}',[HomeController::class,'rss_feed'])->name('rss_feed');
