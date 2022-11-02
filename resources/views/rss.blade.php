@@ -15,7 +15,6 @@
             <title>بزنس على الطريق | مع الغندور</title>
             <link>https://mghandour.com/</link>
         </image>
-        <author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>
         @foreach ($sounds as $post)
             <item>
                 <author>{{ $user->name }}</author>
