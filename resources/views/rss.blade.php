@@ -18,9 +18,8 @@
                 <link>{{ asset('public/audio/'.$post->sound) }}</link>
                 <enclosure type="audio/mpeg" url="{{ asset('public/audio/'.$post->sound) }}" length="2444"/>
                 <description>{!! 'تجربة' !!}</description>
-                <author>MGHANDOUR.islamshu12@gmail.com</author>
+                <author>{{ $user->first_name }}.{{ $user->email }}</author>
                 <guid isPermaLink="false">{{ $post->id }}</guid>
-
 
                 <pubDate>{{ $post->created_at->toRssString() }}</pubDate>
             </item>
