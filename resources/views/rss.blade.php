@@ -4,24 +4,11 @@
 <?= '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL ?>
 <rss version="2.0">
     <channel>
-        <title> {{ $user->name }} Arabic Creator </title>
-        <link>https://arabicreators.com</link>
-        <description>arabicreators </description>
-        <pubDate>{{ now()->toRssString()  }}</pubDate>
-        <generator>https://arabicreators.com</generator>
+        <title><![CDATA[ ItSolutionStuff.com ]]></title>
+        <link><![CDATA[ https://your-website.com/feed ]]></link>
+        <description><![CDATA[ Your website description ]]></description>
         <language>en</language>
-        <author>{{ $user->name }}</author>
-        <owner>
-        <itunes:name>{{ $user->name }}</itunes:name>
-        <itunes:email>{{ $user->email }}/itunes:email>
-        </owner>
-        <itunes:image href="https://pbcdn1.podbean.com/imglogo/image-logo/4333547/podcast_image_01877625-5597-4BEA-A55A-9E2A7C9B4100.jpg"/>
-        <image>
-        <url>https://pbcdn1.podbean.com/imglogo/image-logo/4333547/podcast_image_01877625-5597-4BEA-A55A-9E2A7C9B4100.jpg</url>
-        <title>{{ $user->name }} Arabic Creator</title>
-        <link>https://arabicreators.com</link>
-       
-        </image>
+        <pubDate>{{ now() }}</pubDate>
         @foreach ($sounds as $post)
             <item>
                 <author><![CDATA[{{ $user->name }}]]></author>
